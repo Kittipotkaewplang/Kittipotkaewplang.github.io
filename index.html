@@ -17,7 +17,7 @@
                 <input id="loginpasswordbox" type="text" placeholder="Password"><br><br>
                 <button id="logincmd">Login</button><br>
             </div>
-            <footer class="position-absolute bottom-0 end-0 p-2">version 1.8</footer>
+            <footer class="position-absolute bottom-0 end-0 p-2">version 1.9</footer>
         </div>
 
         <div class="container p-5" id="hello">
@@ -46,17 +46,34 @@
         </div>
 
         <div id="course">
-            <div class="container p-5">
+            <div class="container position-absolute top-0 start-0 p-3">
                 <div id="user-rec"></div>
                 <div id="user-cir"></div>
-                <div id="user-data">Name 08XXX</div>
+                <div id="user-data2">Name 08XXX</div>
             </div>
-            <div>
-
+            <div class="container text-center">
+                <h2 class="text-center p-5"id="registext">Register</h2>
+                <div class="row">
+                    <div class="col">Course Code</div>
+                    <div class="col">Course</div>
+                    <div class="col">Credits</div>
+                    <div class="col">Teacher</div>
+                </div>
+                <div class="row">
+                    <div class="col">TH001</div>
+                    <div class="col">Thai</div>
+                    <div class="col">1.5</div>
+                    <div class="col">Pun</div>
+                </div>
             </div>
-            <button class="btn btn-outline-danger align-items-start" id="logout">Logout</button>
+            <button class="btn btn-outline-danger position-absolute buttom-0 start-10" id="logout2">Logout</button>
+            <div class="text-end"><button class="btn btn-outline-success align-content-end" id="nexttoregis">Next</button></div>
         </div>
         <input hidden id="pass" value="12345">
+
+        <div class="container" id="regis">
+            Register!
+        </div>
 
         <script>
             let loginusernameBox = document.getElementById("loginusernamebox");
@@ -65,26 +82,39 @@
             let hello = document.getElementById("hello")
             let loginbtn = document.getElementById("logincmd");
             let logout = document.getElementById("logout");
+            let logout2 = document.getElementById("logout2");
             let nexttocourse = document.getElementById("nexttocourse");
+            let nexttoregis = document.getElementById("nexttoregis");
             const list = ["12345","08492","08500","08484","08502"]
             const listname = ["Test","Pun","Chai","Song","Money"]
 
             login.style.display = "block";
             hello.style.display = "none";
             course.style.display = "none";
+            regis.style.display = "none";
 
             loginbtn.addEventListener("click",compare);
             logout.addEventListener("click",gotologin);
+            logout2.addEventListener("click",gotologin);
             function gotologin() {
                 hello.style.display = "none";
                 login.style.display = "block";
                 course.style.display = "none";
+                regis.style.display = "none";
             }
             nexttocourse.addEventListener("click",gotocourse);
             function gotocourse() {
                 hello.style.display = "none";
                 login.style.display = "none";
                 course.style.display = "block";
+                regis.style.display = "none";
+            }
+            nexttoregis.addEventListener("click",gotoregis);
+            function gotoregis() {
+                hello.style.display = "none";
+                login.style.display = "none";
+                course.style.display = "none";
+                regis.style.display = "block";
             }
             function compare(){
                 if(pass.value == loginpasswordBox.value){
@@ -92,14 +122,16 @@
                     hello.style.display = "block";
                     login.style.display = "none";
                     course.style.display = "none";
+                    regis.style.display = "none";
                 }
                 else{
-                    alert("Don't have acount!")
+                    alert("Don't have account!")
                 }
             }
 
             function welcome(){
                 document.getElementById("user-data").innerHTML = ""+loginusernameBox.value+"<br>"+list[listname.indexOf(loginusernameBox.value)]+"";
+                document.getElementById("user-data2").innerHTML = ""+loginusernameBox.value+"<br>"+list[listname.indexOf(loginusernameBox.value)]+"";
             }
           </script>
           <script src="index.js"></script>
