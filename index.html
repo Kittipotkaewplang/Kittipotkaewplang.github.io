@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+     <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Booky Firbie</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+     </head>
+     <body>
+        <div class="container p-5" id="login">
+            <h1 class="display-1 text-center">Booky Ferbie</h1>
+            <div class="text-center">
+                <h1 id="logintext" class="text-center">Login</h1><br>
+                <input id="loginusernamebox" type="text" placeholder="Username"><br><br>
+                <input id="loginpasswordbox" type="text" placeholder="Password"><br><br>
+                <button id="logincmd">Login</button><br>
+            </div>
+            <footer class="position-absolute bottom-0 end-0 p-2">version 3.2</footer>
+        </div>
+
+        <div class="container p-5" id="hello">
+            <div class="container position-absolute top-0 start-0 p-3">
+                <div id="user-rec"></div>
+                <div id="user-cir"></div>
+                <div id="user-data">Name 08XXX</div>
+            </div>
+            <div class="text-center">
+                <h2 class="text-center p-5"id="howto">How to register</h2>
+                <div class="row p-2">
+                    <div class="col p-2 card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Un1.svg/1200px-Un1.svg.png" width="128" height="128"></div>
+                    <div class="col p-2 card">Subject : สามารถดูข้อมูลเกี่ยวกับรายวิชาเพิ่มเติมที่เปิดให้ลงทะเบียนในภาคเรียนปัจจุบันได้ และสามารถทำเครื่องหมายให้กับวิชาที่คุณชื่นชอบ ช่วยให้สะดวกในการลงทะเบียนมากยิ่งขึ้น</div>
+                </div>
+                <div class="row p-2">
+                    <div class="col p-2 card">Timetable: สามารถวางแผนตารางเรียนและตรวจสอบรายวิชาเพิ่มเติมที่ลงทะเบียนแล้วได้</div>
+                    <div class="col p-2 card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Deux.svg/1200px-Deux.svg.png" width="128" height="128"></div>
+                </div>
+                <div class="row p-2">
+                    <div class="col p-2 card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Trois.svg/1200px-Trois.svg.png" width="128" height="128"></div>
+                    <div class="col p-2 card">Register : ส่วนของการลงทะเบียน เลือกหมวดหมู่วิชาที่ต้องการ > รายวิชา > section > ยืนยันการลงทะเบียน โดยวิชาที่คุณทำเครื่องหมายชื่นชอบไว้ จะปรากฏอยู่บนสุด สามารถลงทะเบียนได้อย่างรวดเร็ว</div>
+                </div>
+            </div>
+            <button class="btn btn-outline-danger position-absolute buttom-0 start-10" id="logout">Logout</button>
+            <div class="text-end"><button class="btn btn-outline-success align-content-end" id="nexttocourse">Next</button></div>
+        </div>
+
+        <div id="course">
+            <div class="container position-absolute top-0 start-0 p-3">
+                <div id="user-rec"></div>
+                <div id="user-cir"></div>
+                <div id="user-data2">Name 08XXX</div>
+            </div>
+            <div class="m-0 border-0 bd-example bd-example-row bd-example-row-flex-cols">
+                <div class="container text-center">
+                    <h2 class="text-center p-5"id="registext">Register</h2><br>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course</th>
+                            <th>Credits</th>
+                            <th>Teacher</th>
+                        </tr>
+                        <tr>
+                            <td>ค30201</td>
+                            <td>ตรรกศาสตร์และการพิสูจน์</td>
+                            <td>1</td>
+                            <td>อ.ถนอมศักดิ์ เหล่ากุล</td>
+                        </tr>
+                        <tr>
+                            <td>ค30202</td>
+                            <td>การแก้ปัญหาทางคอมบินาทอริก</td>
+                            <td>1.0</td>
+                            <td>อ.นงลักษณ์ อาภาสัตย์</td>
+                        </tr>
+                        <tr>
+                            <td>ค30207</td>
+                            <td>เรขาคณิตวิยุต</td>
+                            <td>1.0</td>
+                            <td>อ.จีรวรรณ บัวประทุม</td>
+                        </tr>
+                        <tr>
+                        </tr>
+                            <td>ค30208</td>
+                            <td>แคลคูลัสขั้นสูง</td>
+                            <td>1.5</td>
+                            <td>อ.ธนัชกฤศ แก้วเต็ม</td>
+                        </tr>
+                        <tr>
+                            <td>ค30209</td>
+                            <td>พีชคณิตเชิงเส้น</td>
+                            <td>1.5</td>
+                            <td>อ.ธนัชกฤศ, อ.ทศพร</td>
+                        </tr>
+                        <tr>
+                            <td>ค30212</td>
+                            <td>ทฤษฎีกราฟ</td>
+                            <td>1.0</td>
+                            <td>อ.ศิรประภา เรวิก</td>
+                        </tr>
+                        <tr>
+                            <td>ค30213</td>
+                            <td>สมการเชิงอนุพันธ์สามัญ</td>
+                            <td>1.5</td>
+                            <td>อ.อัญญารัตน์ บุญวัฒน์</td>
+                        </tr>
+                        <tr>
+                            <td>ค30215</td>
+                            <td>ทฤษฎีรหัส</td>
+                            <td>1.0</td>
+                            <td>อ.มนสิการ จันทร์สร้าง</td>
+                        </tr>
+                        <tr>
+                            <td>ค30216</td>
+                            <td>ตัวแบบคณิตศาสตร์การเงินเบื้องต้น</td>
+                            <td>1.0</td>
+                            <td>อ.นคร จันละ</td>
+                        </tr>
+                        <tr>
+                            <td>ว30312</td>
+                            <td>"หัวข้อพิเศษทางวิทยาศาสตร์และคณิตศาสตร์ 1 (การออกแบบและพัฒนาแอพพลิเคชัน)"</td>
+                            <td>1.0</td>
+                            <td>อ.ทศพร, อ.ขวัญสกุล</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <button class="btn btn-outline-danger position-absolute buttom-0 start-10" id="logout2">Logout</button>
+            <div class="text-end"><button class="btn btn-outline-success align-content-end" id="nexttoregis">Next</button></div>
+        </div>
+
+        <div class="container position-absolute top-50 start-50 translate-middle text-center" id="regis">
+            <h1>Thank you for your interest!</h1>
+            <h4>Final of Prototype</h4><br>
+            <button class="btn btn-outline-danger" id="logout3">Logout</button>
+            <button class="btn btn-outline-warning" id="backtocourse">back</button>
+        </div>
+
+        <script>
+            let loginusernameBox = document.getElementById("loginusernamebox");
+            let loginpasswordBox = document.getElementById("loginpasswordbox");
+            var login = document.getElementById("login")
+            let hello = document.getElementById("hello")
+            let loginbtn = document.getElementById("logincmd");
+            let logout = document.getElementById("logout");
+            let logout2 = document.getElementById("logout2");
+            let logout3 = document.getElementById("logout3");
+            let nexttocourse = document.getElementById("nexttocourse");
+            let nexttoregis = document.getElementById("nexttoregis");
+            let backtocourse = document.getElementById("backtocourse");
+            const list = ["12345","08491","08500","08484","08502","00000"]
+            const listname = ["Test","Pun","Chai","Song","Money","Tree"]
+            const password = ["12345","12345","12345","12345","12345","12345"]
+
+            login.style.display = "block";
+            hello.style.display = "none";
+            course.style.display = "none";
+            regis.style.display = "none";
+
+            document.getElementById("logincmd").addEventListener("click",compare);
+            logout.addEventListener("click",gotologin);
+            logout2.addEventListener("click",gotologin);
+            logout3.addEventListener("click",gotologin);
+            function gotologin() {
+                hello.style.display = "none";
+                login.style.display = "block";
+                course.style.display = "none";
+                regis.style.display = "none";
+            }
+            nexttocourse.addEventListener("click",gotocourse);
+            backtocourse.addEventListener("click",gotocourse);
+            function gotocourse() {
+                hello.style.display = "none";
+                login.style.display = "none";
+                course.style.display = "block";
+                regis.style.display = "none";
+            }
+            nexttoregis.addEventListener("click",gotoregis);
+            function gotoregis() {
+                hello.style.display = "none";
+                login.style.display = "none";
+                course.style.display = "none";
+                regis.style.display = "block";
+            }
+            function compare(){
+                if(password[listname.indexOf(loginusernameBox.value)]== loginpasswordBox.value){
+                    welcome()
+                    hello.style.display = "block";
+                    login.style.display = "none";
+                    course.style.display = "none";
+                    regis.style.display = "none";
+                }
+                else{
+                    alert("Don't have account!")
+                }
+            }
+
+            function welcome(){
+                document.getElementById("user-data").innerHTML = ""+loginusernameBox.value+"<br>"+list[listname.indexOf(loginusernameBox.value)]+"";
+                document.getElementById("user-data2").innerHTML = ""+loginusernameBox.value+"<br>"+list[listname.indexOf(loginusernameBox.value)]+"";
+            }
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     </body>
+</html>

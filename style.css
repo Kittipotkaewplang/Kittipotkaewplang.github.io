@@ -1,0 +1,121 @@
+body{
+  background-color: #F7EDFF;
+}
+
+#logintext {
+  font-family: 'Kiwi Maru';
+  font-style: normal;
+  color: #4A2864;
+}
+
+#logincmd {
+  box-sizing: border-box;
+  position:relative;
+  background: #B6E4BB;
+  border: 1px solid #1C622B;
+  border-radius: 50px;
+  }
+
+#user-rec {
+  position: relative;
+  width: 256px;
+  height: 118px;
+  background: #B6E4BB;
+  border: 1px solid #1C622B;
+  border-radius: 30px;
+  z-index:1;
+}
+#user-cir {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  left: 48px;
+  top: -100px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  z-index:2;
+}
+
+#user-data {
+  position: relative;
+  width: 99px;
+  height: 79px;
+  left: 156px;
+  top: -182px;
+
+  font-family: 'Kiwi Maru';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  z-index:3;
+}
+
+#user-data2 {
+  position: relative;
+  width: 99px;
+  height: 79px;
+  left: 156px;
+  top: -182px;
+
+  font-family: 'Kiwi Maru';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  z-index:3;
+}
+
+#howto {
+  position: relative;
+  width: 790px;
+  height: 67px;
+  left: 200px;
+
+  font-family: 'Kiwi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 116px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #4A2864;
+}
+
+#registext {
+  position: relative;
+  width: 790px;
+  height: 67px;
+  left: 200px;
+
+  font-family: 'Kiwi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 116px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #4A2864;
+}
+
+table tr th {
+  border: 1px solid black;
+}
+
+table tr td {
+  border: 1px solid black;
+}
